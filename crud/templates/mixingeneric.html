@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Mixin View</title>
+</head>
+<body>
+
+<center>
+
+<h1> This Mixin View </h1>
+    <br>
+    <a href=" http://{{ domain }}/mixingeneric/empclass1"><h3>Read all and Create New</h3></a>
+    <br>
+
+        <h3>View, Update and Delete by Id</h3>
+    {% for i in data %}
+    <a href=" http://{{ domain }}/mixingeneric/empclass2/{{i.empid}}"><h3>{{ i.empid }}</h3></a>
+    {% endfor %}
+</center>
+
+</body>
+</html>
